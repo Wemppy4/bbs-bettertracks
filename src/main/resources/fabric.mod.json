@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "bbs-bettertracks",
+	"version": "${version}",
+	"name": "BBS Better Tracks",
+	"description": "An addon for BBS mod that enhances track functionality",
+	"authors": [
+		"Wemppy"
+	],
+	"contact": {
+		"homepage": "https://www.youtube.com/@wemppy"
+	},
+	"license": "MIT",
+	"icon": "assets/modid/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.wemppy.bbsbettertracks.ExampleMod"
+		],
+		"client": [
+			"com.wemppy.bbsbettertracks.ExampleModClient"
+		]
+	},
+	"mixins": [
+		"bbs-bettertracks.mixins.json",
+		{
+			"config": "bbs-bettertracks.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": ["1.20.1", "1.20.4"],
+		"java": ">=17",
+		"fabric-api": "*",
+		"bbs": "*"
+	}
+}

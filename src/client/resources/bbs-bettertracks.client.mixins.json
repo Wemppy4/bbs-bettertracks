@@ -1,0 +1,31 @@
+{
+	"required": true,
+	"package": "com.wemppy.bbsbettertracks.mixin.client",
+	"compatibilityLevel": "JAVA_17",
+	"client": [
+		"BBSModClientMixin",
+		"BBSSettingsMixin",
+		"IUIKeyframeGraphMixin",
+		"KeysMixin",
+		"UIAnimationStateKeyframesMixin",
+		"UIFormPanelAccessor",
+		"UIKeyframeSheetAccessor",
+		"UIKeyframeSheetMixin",
+		"UIKeyframeDopeSheetMixin",
+		"UIKeyframeDopeSheetRenderMixin",
+		"UIKeyframeGraphRenderMixin",
+		"UIKeyframesMixin",
+		"UIKeyframesCopyViewportMixin",
+		"UIReplaysEditorUtilsMixin",
+		"UIPoseKeyframeFactoryMixin",
+		"UIGeneralFormPanelMixin",
+		"UIPropTransformMixin",
+		"UIPoseTransformsMixin",
+		"UIValueFactoryMixin",
+		"UIReplaysEditorMixin",
+		"UIValueMapMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

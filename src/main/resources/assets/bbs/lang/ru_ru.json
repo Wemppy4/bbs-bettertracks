@@ -1,0 +1,10 @@
+{
+  "bbs.config.appearance.auto_select_bone_by_track_name": "Автовыбор кости по названию дорожки",
+  "bbs.config.appearance.auto_select_bone_by_track_name-comment": "Автоматически выбирает кость, если её имя совпадает с названием дорожки.",
+
+  "bbs.config.appearance.default_keyframe_shape": "Форма кейфрейма по умолчанию",
+  "bbs.config.appearance.default_keyframe_color": "Цвет кейфрейма по умолчанию",
+
+  "bbs.ui.forms.editors.general.filter_tracks": "Фильтр дорожек",
+  "bbs.ui.forms.editors.general.filter_tracks-tooltip": "Скрыть или показать дорожки для этой формы"
+}

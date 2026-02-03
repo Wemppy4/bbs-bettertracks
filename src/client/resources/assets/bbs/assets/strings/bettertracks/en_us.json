@@ -1,0 +1,41 @@
+{
+  "bbs.config.bettertracks.title": "BetterTracks",
+  
+  "bbs.ui.forms.editors.general.filter_tracks": "Filter Tracks",
+  "bbs.ui.forms.editors.general.filter_tracks-tooltip": "Hide or show tracks for this form",
+  "bbs.ui.forms.editors.general.disable_all": "Disable All",
+
+  "bbs.ui.keyframes.change_color": "Change Color",
+  "bbs.ui.keyframes.reset_track_names": "Reset Track Names",
+  "bbs.ui.keyframes.auto_name_overlays": "Auto-name Overlays",
+  "bbs.ui.keyframes.no_named_pose_tracks": "No named pose tracks found!",
+  "bbs.ui.keyframes.no_overlay_tracks": "No overlay tracks found!",
+  "bbs.ui.keyframes.overlays_named_all": "Named %s overlay tracks",
+  "bbs.ui.keyframes.overlays_named_partial": "Named %s of %s overlay tracks (not enough overlays)",
+  "bbs.ui.keyframes.change_track_color": "Change Track Color",
+  "bbs.ui.keyframes.change_track_color_tooltip": "Select a color for the track",
+  
+  "bbs.ui.keyframes.distribute_to_overlays": "Distribute to Overlays",
+  "bbs.ui.keyframes.no_selected_pose_keyframes": "No selected pose keyframes!",
+  "bbs.ui.keyframes.distributed_bones": "Distributed %s bones from %s keyframes to overlay tracks",
+  "bbs.ui.keyframes.no_bones_distributed": "No bones were distributed (no matching overlay tracks found)",
+
+  "bbs.config.bettertracks.auto_select_bone_by_track_name": "Auto-select bone by track name",
+  "bbs.config.bettertracks.auto_select_bone_by_track_name-comment": "Automatically selects the bone when you pick a keyframe on a bone track.",
+  "bbs.config.bettertracks.auto_select_track_by_bone_name": "Auto-select track by bone name",
+  "bbs.config.bettertracks.auto_select_track_by_bone_name-comment": "Automatically selects the bone track when you click on a bone in the viewport.",
+  "bbs.config.bettertracks.insert_keyframe_on_bone_click": "Insert keyframe on bone click",
+  "bbs.config.bettertracks.insert_keyframe_on_bone_click-comment": "Creates a new keyframe at the current time when clicking on a bone, instead of selecting the nearest keyframe.",
+  "bbs.config.bettertracks.insert_keyframe_on_overlays": "Insert keyframe on overlay tracks",
+  "bbs.config.bettertracks.insert_keyframe_on_overlays-comment": "When enabled, creates keyframes on bone overlay tracks when clicking bones. When disabled, always creates keyframes on the main pose track.",
+  "bbs.config.bettertracks.local_transform_by_default": "Local transform by default",
+  "bbs.config.bettertracks.local_transform_by_default-comment": "When enabled, the transformation mode will be set to local by default.",
+  "bbs.config.bettertracks.realtime_keyframe_recording": "Realtime keyframe recording",
+  "bbs.config.bettertracks.realtime_keyframe_recording-comment": "When enabled and playback is running, transforming a bone will automatically create keyframes in realtime.",
+  "bbs.ui.keyframes.toggle_insert_keyframe": "Insert keyframe on bone click: %s",
+  "bbs.keys.bettertracks.toggle_insert_keyframe": "Toggle: Insert keyframe on bone click",
+  "bbs.config.bettertracks.default_keyframe_shape": "Default keyframe shape",
+  "bbs.config.bettertracks.default_keyframe_shape-comment": "Shape used for new keyframes in the timeline.",
+  "bbs.config.bettertracks.default_keyframe_color": "Default keyframe color",
+  "bbs.config.bettertracks.default_keyframe_color-comment": "Color used for new keyframes in the timeline."
+}

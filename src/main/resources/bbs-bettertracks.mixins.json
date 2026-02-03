@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "com.wemppy.bbsbettertracks.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"FormMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

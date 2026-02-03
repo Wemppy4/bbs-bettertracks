@@ -1,0 +1,41 @@
+{
+  "bbs.config.bettertracks.title": "BetterTracks",
+  
+  "bbs.ui.forms.editors.general.filter_tracks": "Фильтр треков",
+  "bbs.ui.forms.editors.general.filter_tracks-tooltip": "Скрыть или показать треки для этой формы",
+  "bbs.ui.forms.editors.general.disable_all": "Отключить все",
+
+  "bbs.ui.keyframes.change_color": "Изменить цвет",
+  "bbs.ui.keyframes.reset_track_names": "Сбросить имена треков",
+  "bbs.ui.keyframes.auto_name_overlays": "Авто-имена оверлеев",
+  "bbs.ui.keyframes.no_named_pose_tracks": "Не найдено именованных pose дорожек!",
+  "bbs.ui.keyframes.no_overlay_tracks": "Не найдено overlay дорожек!",
+  "bbs.ui.keyframes.overlays_named_all": "Именовано %s overlay дорожек",
+  "bbs.ui.keyframes.overlays_named_partial": "Именовано %s из %s overlay дорожек (не хватает оверлеев)",
+  "bbs.ui.keyframes.change_track_color": "Изменить цвет трека",
+  "bbs.ui.keyframes.change_track_color_tooltip": "Выберите цвет для трека",
+  
+  "bbs.ui.keyframes.distribute_to_overlays": "Распределить на оверлеи",
+  "bbs.ui.keyframes.no_selected_pose_keyframes": "Нет выделенных pose кейфреймов!",
+  "bbs.ui.keyframes.distributed_bones": "Распределено %s костей из %s кейфреймов на overlay дорожки",
+  "bbs.ui.keyframes.no_bones_distributed": "Ни одна кость не была распределена (не найдены соответствующие overlay дорожки)",
+
+  "bbs.config.bettertracks.auto_select_bone_by_track_name": "Автовыбор кости по имени дорожки",
+  "bbs.config.bettertracks.auto_select_bone_by_track_name-comment": "Автоматически выбирает кость при выборе кейфрейма на дорожке кости.",
+  "bbs.config.bettertracks.auto_select_track_by_bone_name": "Автовыбор дорожки по имени кости",
+  "bbs.config.bettertracks.auto_select_track_by_bone_name-comment": "Автоматически выбирает дорожку кости при клике на кость во вьюпорте.",
+  "bbs.config.bettertracks.insert_keyframe_on_bone_click": "Создавать кейфрейм при клике на кость",
+  "bbs.config.bettertracks.insert_keyframe_on_bone_click-comment": "Создаёт новый кейфрейм в текущей позиции времени при клике на кость, вместо выбора ближайшего кейфрейма.",
+  "bbs.config.bettertracks.insert_keyframe_on_overlays": "Создавать кейфрейм на оверлей дорожках",
+  "bbs.config.bettertracks.insert_keyframe_on_overlays-comment": "Если включено, создаёт кейфреймы на оверлей дорожках костей при клике на кости. Если выключено, всегда создаёт кейфреймы на основной pose дорожке.",
+  "bbs.config.bettertracks.local_transform_by_default": "Локальная трансформация по умолчанию",
+  "bbs.config.bettertracks.local_transform_by_default-comment": "Если включено, режим трансформации будет установлен в локальный режим по умолчанию.",
+  "bbs.config.bettertracks.realtime_keyframe_recording": "Запись кейфреймов в реальном времени",
+  "bbs.config.bettertracks.realtime_keyframe_recording-comment": "Если включено и воспроизведение активно, трансформация кости будет автоматически создавать кейфреймы в реальном времени.",
+  "bbs.ui.keyframes.toggle_insert_keyframe": "Создавать кейфрейм при клике: %s",
+  "bbs.keys.bettertracks.toggle_insert_keyframe": "Переключить: Создавать кейфрейм при клике на кость",
+  "bbs.config.bettertracks.default_keyframe_shape": "Форма ключевого кадра по умолчанию",
+  "bbs.config.bettertracks.default_keyframe_shape-comment": "Форма, используемая для новых ключевых кадров на временной шкале.",
+  "bbs.config.bettertracks.default_keyframe_color": "Цвет ключевого кадра по умолчанию",
+  "bbs.config.bettertracks.default_keyframe_color-comment": "Цвет, используемый для новых ключевых кадров на временной шкале."
+}

@@ -1,0 +1,10 @@
+{
+  "bbs.config.appearance.auto_select_bone_by_track_name": "Auto-select bone by track name",
+  "bbs.config.appearance.auto_select_bone_by_track_name-comment": "Automatically selects the bone if its name matches the track name.",
+
+  "bbs.config.appearance.default_keyframe_shape": "Default keyframe shape",
+  "bbs.config.appearance.default_keyframe_color": "Default keyframe color",
+
+  "bbs.ui.forms.editors.general.filter_tracks": "Filter Tracks",
+  "bbs.ui.forms.editors.general.filter_tracks-tooltip": "Hide or show tracks for this form"
+}
