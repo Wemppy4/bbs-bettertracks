@@ -58,8 +58,10 @@ public class UIReplaysEditorUtilsMixin {
         String key = null;
         UIKeyframeSheet matchingSheet = null;
 
-        if (insertKeyframe && insertOnOverlays) {
-            matchingSheet = UIReplaysEditorUtilsMixin.findSheetByBoneName(keyframeEditor, form, bone);
+        if (insertKeyframe) {
+            if (insertOnOverlays) {
+                matchingSheet = UIReplaysEditorUtilsMixin.findSheetByBoneName(keyframeEditor, form, bone);
+            }
         } else if (autoSelect) {
             matchingSheet = UIReplaysEditorUtilsMixin.findSheetByBoneName(keyframeEditor, form, bone);
         }
@@ -79,36 +81,47 @@ public class UIReplaysEditorUtilsMixin {
         } 
         
         if (key == null) {
-            Keyframe selected = keyframeEditor.view.getGraph().getSelected();
             String type = "pose";
 
-            if (selected != null) {
-                String id = selected.getParent().getId();
-                int index = id.indexOf("pose_overlay");
+            if (!insertKeyframe) {
+                Keyframe selected = keyframeEditor.view.getGraph().getSelected();
 
-                if (index >= 0) {
-                    type = id.substring(index);
-                }
-            } else {
-                UIKeyframeSheet lastSheet = keyframeEditor.view.getGraph().getLastSheet();
+                if (selected != null) {
+                    String id = selected.getParent().getId();
+                    int index = id.indexOf("pose_overlay");
 
-                if (lastSheet != null && lastSheet.property != null) {
-                    if (FormUtils.getPath((Form) lastSheet.property.getParent()).equals(FormUtils.getPath(form)) && lastSheet.property.getId().startsWith("pose") && !lastSheet.channel.isEmpty()) {
-                        type = lastSheet.id;
+                    if (index >= 0) {
+                        type = id.substring(index);
+                    }
+                } else {
+                    UIKeyframeSheet lastSheet = keyframeEditor.view.getGraph().getLastSheet();
+
+                    if (lastSheet != null && lastSheet.property != null) {
+                        if (FormUtils.getPath((Form) lastSheet.property.getParent()).equals(FormUtils.getPath(form)) && lastSheet.property.getId().startsWith("pose") && !lastSheet.channel.isEmpty()) {
+                            type = lastSheet.id;
+                        }
                     }
                 }
-            }
 
-            UIKeyframeSheet sheet = keyframeEditor.view.getGraph().getSheet(StringUtils.combinePaths(path, type));
+                UIKeyframeSheet sheet = keyframeEditor.view.getGraph().getSheet(StringUtils.combinePaths(path, type));
 
-            if (sheet != null && sheet.channel.isEmpty()) {
-                type = "pose";
+                if (sheet != null && sheet.channel.isEmpty()) {
+                    type = "pose";
+                }
             }
             
             key = StringUtils.combinePaths(path, type);
         }
 
-        UIReplaysEditorUtilsMixin.bbsbettertracks$invokePickProperty(keyframeEditor, cursor, bone, key, insertKeyframe);
+        boolean shouldInsert = insertKeyframe;
+        if (shouldInsert && key != null) {
+            UIKeyframeSheet sheet = keyframeEditor.view.getGraph().getSheet(key);
+            if (UIReplaysEditorUtilsMixin.hasKeyframeNearTick(sheet, cursor.getCursor(), 0)) {
+                shouldInsert = false;
+            }
+        }
+
+        UIReplaysEditorUtilsMixin.bbsbettertracks$invokePickProperty(keyframeEditor, cursor, bone, key, shouldInsert);
         if (insertKeyframe) {
             UIReplaysEditorUtilsMixin.bbsbettertracks$selectBoneInEditor(keyframeEditor, bone);
         }
